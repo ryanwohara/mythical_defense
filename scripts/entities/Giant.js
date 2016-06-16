@@ -7,12 +7,12 @@ function Giant (x, y) {
 	this.height = 90;
 	this.headDiameter = 7;
 	this.hp = 300;
-}
+};
 
 Giant.prototype.move = function(x, y) {
 	this.x = x;
 	this.y = y;
-}
+};
 
 Giant.prototype.draw = function() {
 	this.context.beginPath();
@@ -58,4 +58,4 @@ Giant.prototype.draw = function() {
 	this.context.stroke();
 
 	this.context.closePath();
-}
+};

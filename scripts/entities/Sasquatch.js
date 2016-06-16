@@ -7,14 +7,16 @@ function Sasquatch (x, y) {
 	this.height = 90;
 	this.headDiameter = 7;
 	this.hp = 100;
-}
+};
 
 Sasquatch.prototype.move = function(x, y) {
 	this.x = x;
 	this.y = y;
-}
+};
 
 Sasquatch.prototype.draw = function() {
+	++this.x;
+
 	this.context.beginPath();
 
 	this.context.arc(this.x, this.y + this.height, this.headDiameter, 0, 360, 0);
@@ -58,4 +60,4 @@ Sasquatch.prototype.draw = function() {
 	this.context.stroke();
 
 	this.context.closePath();
-}
+};

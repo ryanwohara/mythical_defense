@@ -6,12 +6,12 @@ function House (x, y) {
 	this.width = 90;
 	this.height = 50;
 	this.hp = 100;
-}
+};
 
 House.prototype.move = function(x, y) {
 	this.x = x;
 	this.y = y;
-}
+};
 
 House.prototype.draw = function() {
 	this.context.beginPath();
@@ -26,4 +26,4 @@ House.prototype.draw = function() {
 	this.context.stroke();
 
 	this.context.closePath();
-}
+};

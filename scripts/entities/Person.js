@@ -7,12 +7,12 @@ function Person (x, y) {
 	this.height = 25;
 	this.headRadius = 4.5;
 	this.hp = 35;
-}
+};
 
 Person.prototype.move = function(x, y) {
 	this.x = x;
 	this.y = y;
-}
+};
 
 Person.prototype.draw = function() {
 	this.context.beginPath();
@@ -41,4 +41,4 @@ Person.prototype.draw = function() {
 	this.context.stroke();
 
 	this.context.closePath();
-}
+};
